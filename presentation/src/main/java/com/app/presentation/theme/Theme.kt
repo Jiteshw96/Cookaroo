@@ -48,7 +48,7 @@ fun CookarooTheme(
     }
 
     val view = LocalView.current
-    val statusBarColor = windowBackground.toArgb()
+    val statusBarColor = colorAccent.toArgb()
     if (!view.isInEditMode) {
         SideEffect {
             val window = (view.context as Activity).window

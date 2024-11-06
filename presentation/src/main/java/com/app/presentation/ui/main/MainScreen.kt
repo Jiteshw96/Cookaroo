@@ -137,9 +137,6 @@ fun MainScreen(
                     )
                 }
             }
-        }else{
-
-            EmptyData()
         }
         if (isLoading) {
             Loader()
