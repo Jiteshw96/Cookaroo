@@ -55,12 +55,6 @@ fun DishAnalysisBottomSheet(
                 )
             }
 
-            Text(
-                modifier = Modifier.padding(vertical = dimensionResource(id = R.dimen.medium_margin)),
-                text = stringResource(id = R.string.number_of_ingredients),
-                style = MaterialTheme.typography.headlineLarge
-            )
-
             Column(modifier = Modifier.padding(vertical = dimensionResource(id = R.dimen.small_margin))) {
                 details.topCharacters.forEach { (char, count) ->
                     Row(Modifier.padding(top = dimensionResource(id = R.dimen.small_margin))) {
