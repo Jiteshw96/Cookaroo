@@ -1,7 +1,9 @@
 package com.app.presentation.activities.main
 
+import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.widget.SearchView
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
@@ -29,6 +31,11 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
     private lateinit var ingredientAdapter: IngredientsListAdapter
 
     override fun provideLayoutRes(): Int = R.layout.activity_main
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        installSplashScreen()
+    }
 
     override fun initView() {
         initDataAdapter()
