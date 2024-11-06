@@ -22,7 +22,6 @@ Cookaroo offers insights into the top 8 vegetarian dishes around the world, prov
 This project includes screenshots to provide a visual overview of the application. You can find them
 in the [screenshots](/screenshots) directory.
 
-Here are a few examples:
 <img src="screenshots/img.png" alt="Screenshot 1" width="150"/>
 <img src="screenshots/img_1.png" alt="Screenshot 2" width="150"/>
 <img src="screenshots/img_2.png" alt="Screenshot 3" width="150"/>
