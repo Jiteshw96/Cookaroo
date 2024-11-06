@@ -39,6 +39,8 @@ downloaded from [here](https://developer.android.com/studio)..
 
 This project leverages several Jetpack Compose libraries to build a modern Android UI:
 
+* **io.insert-koin:koin-android:** This projects uses koin as a dependency injection framework
+
 * **androidx.activity:activity-compose:** This library is s part of the Jetpack Compose toolkit for
   Android, which provides a modern toolkit for building native Android UIs.
 
