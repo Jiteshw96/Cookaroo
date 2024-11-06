@@ -95,7 +95,7 @@ class MainActivity : BaseActivity<ActivityMainBinding>() {
                         error?.let {
                             Toast.makeText(
                                 this@MainActivity,
-                                it?:R.string.generic_error_message,
+                                it,
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
