@@ -1,9 +1,9 @@
-package com.app.presentation.activities.main
+package com.app.presentation.ui.main
 
 import androidx.annotation.StringRes
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.app.presentation.R
-import com.app.presentation.base.BaseViewModel
 import com.app.presentation.model.DishAnalysisDetails
 import com.domain.common.ResponseState
 import com.domain.model.Dish
@@ -19,7 +19,7 @@ import kotlinx.coroutines.launch
 
 class MainViewModel(
     private val fetchCollectionUseCase: FetchDishCollectionUseCase
-) : BaseViewModel() {
+) : ViewModel() {
 
     private val _searchQuery = MutableStateFlow("")
     val searchQuery get() = _searchQuery.asStateFlow()
@@ -53,7 +53,7 @@ class MainViewModel(
     }
 
 
-    fun fetchDishCollection() {
+  private fun fetchDishCollection() {
         _isLoading.value = true
         viewModelScope.launch {
             fetchCollectionUseCase().catch { cause ->
@@ -84,7 +84,7 @@ class MainViewModel(
     }
 
 
-    fun getIngredientsList() = viewModelScope.launch {
+    private fun getIngredientsList() = viewModelScope.launch {
         if (currentCarouselIndex < 0 || _carouselData.value.isEmpty()) {
             return@launch
         }
@@ -93,7 +93,12 @@ class MainViewModel(
         _ingredientList.emit(ingredientList)
     }
 
-    fun filterIngredientList(searchQuery: String) {
+    fun onSearchTriggered(query: String){
+        _searchQuery.value = query
+        filterIngredientList(query)
+    }
+
+   private fun filterIngredientList(searchQuery: String) {
         viewModelScope.launch {
              if (searchQuery.isNotEmpty()) {
                  val filteredData = _dishCollection.value?.dishes?.get(currentCarouselIndex)?.ingredientList?.filter { ingredient ->
