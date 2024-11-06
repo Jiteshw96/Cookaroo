@@ -45,9 +45,8 @@ class DishRepositoryImpl : DishRepository {
                     ),
                     IngredientEntity(
                         "onions",
-                        R.drawable.onions,
-
-                        ),
+                        R.drawable.onions
+                    ),
                     IngredientEntity(
                         "lemon juice",
                         R.drawable.lemon_juice,
@@ -139,11 +138,6 @@ class DishRepositoryImpl : DishRepository {
                         R.drawable.onions,
                     ),
                     IngredientEntity(
-                        "Garlic",
-                        R.drawable.garlic,
-                    ),
-
-                    IngredientEntity(
                         "Olive oil",
                         R.drawable.olive_oil,
                     ),
@@ -182,7 +176,7 @@ class DishRepositoryImpl : DishRepository {
                         R.drawable.tomatoes
                     ),
                     IngredientEntity(
-                        "Onions",
+                        "Onion",
                         R.drawable.onions,
                     ),
                     IngredientEntity(
@@ -257,7 +251,7 @@ class DishRepositoryImpl : DishRepository {
                         R.drawable.chickpeas,
                     ),
                     IngredientEntity(
-                        "Onions",
+                        "Onion",
                         R.drawable.onions,
                     ),
                     IngredientEntity(
@@ -314,10 +308,6 @@ class DishRepositoryImpl : DishRepository {
                     IngredientEntity(
                         "Onions",
                         R.drawable.onions,
-                    ),
-                    IngredientEntity(
-                        "Garlic",
-                        R.drawable.garlic,
                     ),
                     IngredientEntity(
                         "olive oil",
