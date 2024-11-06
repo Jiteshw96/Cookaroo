@@ -6,16 +6,16 @@ Cookaroo offers insights into the top 8 vegetarian dishes around the world, prov
 
 ## Key Features:
 
-Top Dishes & Ingredients: 
-The app features data on the top vegetarian dishes globally, showcasing key ingredients.
-Modern Multi-Module Architecture: 
-Built with the Multi Module Architecture and following Clean Architecture principles, ensuring efficient and scalable code.
-Application is developed using Android XML designs
-Interactive Display:
-Displays the list of top dishes in a Horizontal Pager view, with detailed ingredient lists shown in an organized, easy-to-navigate layout.
-Collapsible Layout for Enhanced Usability: The collapsible layout design enhances user experience, making it simple to view.
-Dynamic Search with Pattern Matching: 
-Includes a powerful search feature, enabling users to quickly find dishes based on ingredients or keywords with advanced pattern matching functionality.
+**Top Dishes & Ingredients:**  
+ - The app features data on the top vegetarian dishes globally, showcasing key ingredients.
+**Modern Multi-Module Architecture:**
+ - Built with the Multi Module Architecture and following Clean Architecture principles, ensuring efficient and scalable code. 
+ - Application is developed using Android XML designs
+**Interactive Display:**
+ - Displays the list of top dishes in a Horizontal Pager view, with detailed ingredient lists shown in an organized, easy-to-navigate layout.
+ - Collapsible Layout for Enhanced Usability: The collapsible layout design enhances user experience, making it simple to view.
+**Dynamic Search with Pattern Matching:**
+ - Includes a powerful search feature, enabling users to quickly find dishes based on ingredients or keywords with advanced pattern matching functionality.
 
 ## Screenshots
 
@@ -23,12 +23,12 @@ This project includes screenshots to provide a visual overview of the applicatio
 in the [screenshots](/screenshots) directory.
 
 Here are a few examples:
-![img.png](screenshots/img.png)
-![img.png](screenshots/img_1.png)
-![img.png](screenshots/img_2.png)
-![img.png](screenshots/img_3.png)
-![img.png](screenshots/img_4.png)
-![img.png](screenshots/img_5.png)
+<img src="screenshots/img.png" alt="Screenshot 1" width="150"/>
+<img src="screenshots/img_1.png" alt="Screenshot 2" width="150"/>
+<img src="screenshots/img_2.png" alt="Screenshot 3" width="150"/>
+<img src="screenshots/img_3.png" alt="Screenshot 4" width="150"/>
+<img src="screenshots/img_4.png" alt="Screenshot 5" width="150"/>
+<img src="screenshots/img_5.png" alt="Screenshot 6" width="150"/>
 
 
 ## Android Studio IDE Setup
